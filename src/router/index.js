@@ -17,6 +17,12 @@ const routes = [
         component: () => import("@/views/ContactEdit.vue"),
         props: true // Truyền các biến trong $route.params vào làm props
     },
+    {
+        path: "/contacts/add",      // đường dẫn đến trang Thêm liên hệ
+        name: "contact.add",        // tên route để bạn có thể this.$router.push({ name: "contact.add" })
+        component: () => import("@/views/ContactAdd.vue"),  // lazy‑load component ContactAdd.vue
+    },
+
 ];
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),

@@ -40,6 +40,13 @@
                     <i class="fas fa-edit"></i> Hiệu chỉnh</span
                     >
                 </router-link>
+
+                <!-- Thay đổi nút Thêm mới thành router-link -->
+                <router-link :to="{ name: 'contact.add' }">
+                    <button class="btn btn-sm btn-success">
+                    <i class="fas fa-plus"></i> Thêm mới
+                    </button>
+                </router-link>
             </div>
         </div>
     </div>
